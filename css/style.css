@@ -1,14 +1,14 @@
 h1 {
-    font-family: Shrikhand;
+    font-family: 'Shrikhand', cursive;
 }
 
-.localisation span {
-    font-family: Roboto;
+.location span {
+    font-family: 'Roboto', sans-serif;
     font-weight: bold;
     font-size: 18px;
 }
 
-.fonctionnement article div {
+.function article div {
     border: 1px solid violet;
     background-color: violet;
     border-radius: 50%;
@@ -19,6 +19,6 @@ h1 {
     align-items: center;
 }
 
-.fonctionnement article {
+.function article {
     display: flex;
 }
