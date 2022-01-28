@@ -1,5 +1,42 @@
+/* Mobile first */
+* {
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* Header index */
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.back-index {
+    padding: 5px 55px 5px 15px;
+    color: white;
+}
+
 h1 {
     font-family: 'Shrikhand', cursive;
+}
+
+
+/* search bar */
+.location {
+    display: flex;
+    width: 100%;
+}
+
+.location label {
+    position: absolute;
+    left: -999px;
 }
 
 .location span {
@@ -8,17 +45,31 @@ h1 {
     font-size: 18px;
 }
 
-.function article div {
-    border: 1px solid violet;
-    background-color: violet;
-    border-radius: 50%;
-    width: 25px;
-    height: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+/* Info explore */
+.explore {
+    padding: 60px 0 60px 0;
+    text-align: center;
+    background: white;
+    width: 100%;
 }
 
-.function article {
-    display: flex;
+.explore h2 {
+    width: 80%;
+    margin: auto;
+    font-weight: bold;
+}
+
+.explore p {
+    padding: 0px 0 40px 0;
+}
+
+.explore a {
+    border: 0;
+    padding: 16px 25px;
+    font-size: 18px;
+    border-radius: 100px;
+    color: #fff;
+    background-image: linear-gradient(0deg,rgba(147,86,220,.9),rgba(255,121,218,.9));
+    cursor: pointer;
+    box-shadow: 1px 1px 10px rgb(0 0 0 / 25%);
 }
