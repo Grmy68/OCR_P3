@@ -8,14 +8,14 @@
     <script src="https://kit.fontawesome.com/6b6d97aea6.js" crossorigin="anonymous"></script>
     <nk rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="16x16" href="img/logo/favicon-16x16.png">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>ohmyfood - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+            rel="stylesheet">
+        <link rel="icon" href="img/logo/favicon.ico">
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <title>ohmyfood - Accueil</title>
 
 <body>
     <header>
-        <i class="fas fa-arrow-left back-index"></i>
         <h1>ohmyfood</h1>
     </header>
 
@@ -34,68 +34,86 @@
             <a href="#restaurants">Explorer nos restaurants</a>
         </section>
 
-        <section class="function">
-            <h2>Fonctionnement</h2>
-                    <article>
-                        <div>1</div>
-                        <i class="fas fa-mobile-alt"></i>
+        <section class="container_function">
+            <div class="function">
+                <h2>Fonctionnement</h2>
+
+                <ol class="steps">
+                    <li class="step">
+                        <i class="fas fa-mobile-alt">...</i>
                         <span>Choisissez un restaurant</span>
-                    </article>
-                   
-                    <article>
-                        <div>2</div>
-                        <i class="fas fa-list-ul"></i>
+                    </li>
+
+                    <li class="step">
+                        <i class="fas fa-list-ul">...</i>
                         <span>Composez votre menu</span>
-                    </article>
-                    
-                    <article>
-                        <div>3</div>
-                        <i class="fas fa-store"></i>
+                    </li>
+
+                    <li class="step">
+                        <i class="fas fa-store">...</i>
                         <span>Dégustez au restaurant</span>
-                    </article>
+                    </li>
+                </ol>
+            </div>
         </section>
 
-        <section class="restaurants_list">
+        <section class="restaurants_container">
             <h2>Restaurants</h2>
 
-            <article class="restaurant_choice">
+            <article class="restaurant_card">
                 <img src="img/restaurants/palette.jpg" alt="La palette du goût">
-                <div class="description_restaurant">
-                <h3>La palette du goût</h3>
-                <span>Ménilmontant</span>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
-            </div>
+
+                <div class="test">
+
+                    <div class="description_restaurant">
+                        <h3>La palette du goût</h3>
+                        <span>Ménilmontant</span>
+                    </div>
+                    
+                    <div class="hearts">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                </div>
             </article>
 
-            <article class="restaurant_choice">
+            <article class="restaurant_card">
                 <img src="img/restaurants/enchante.jpg" alt="La note enchantée">
-                <div class="description_restaurant"></div>
-                <h3>La note enchantée</h3>
-                <span>Charonne</span>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
-            </div>
+
+                <div class="test">
+
+                    <div class="description_restaurant">
+                        <h3>La note enchantée</h3>
+                        <span>Charonne</span>
+                    </div>
+
+                    <div class="hearts">
+                        <i class="far fa-heart"></i>
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                </div>
             </article>
 
-            <article class="restaurant_choice">
+            <article class="restaurant_card">
                 <img src="img/restaurants/francaise.jpg" alt="À la française">
                 <div class="description_restaurant"></div>
                 <h3>À la française</h3>
                 <span>Cité Rouge</span>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
-            </div>
+                </div>
             </article>
 
-            <article class="restaurant_choice">
+            <article class="restaurant_card">
                 <img src="img/restaurants/sens.jpg" alt="Le délice des sens">
                 <div class="description_restaurant"></div>
                 <h3>Le délice des sens</h3>
                 <span>Folie-Méricourt</span>
                 <i class="far fa-heart"></i>
                 <i class="fas fa-heart"></i>
-            </div>
+                </div>
             </article>
 
         </section>
@@ -105,16 +123,16 @@
     <footer>
         <h2>ohmyfood</h2>
         <nav>
-        <ul>
-            <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"></a><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-            <li><a href="#"></a>Mentions légales</a></li>
-            <li><a href="#"></a>Contact</a></li>
-        </ul>
-    </nav>
+            <ul>
+                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+                <li><a href="#">Mentions légales</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
 
     </footer>
 
 </body>
 
-</html> 
+</html>
