@@ -20,13 +20,13 @@
     </header>
 
     <main>
-        <section class="location">
+        <div class="location">
+            <form id="search-bar"></form>
             <i class="fas fa-map-marker-alt"></i>
-            <form id="search-bar">
-                <label for="search">Indiquez la zone recherchée</label>
-                <input type="search" placeholder="Paris, Belleville" id="search">
+            <label for="search">Indiquez la zone recherchée</label>
+            <input type="search" placeholder="Paris, Belleville" id="search">
             </form>
-        </section>
+        </div>
 
         <section class="explore">
             <h2>Réservez le menu qui vous convient</h2>
@@ -38,81 +38,94 @@
             <div class="function">
                 <h2>Fonctionnement</h2>
 
-                <ol class="steps">
+                <ul class="steps">
                     <li class="step">
-                        <i class="fas fa-mobile-alt">...</i>
+                        <span class="step_number">1</span>
+                        <i class="fas fa-mobile-alt"></i>
                         <span>Choisissez un restaurant</span>
                     </li>
 
                     <li class="step">
-                        <i class="fas fa-list-ul">...</i>
+                        <span class="step_number">2</span>
+                        <i class="fas fa-list-ul"></i>
                         <span>Composez votre menu</span>
                     </li>
 
                     <li class="step">
-                        <i class="fas fa-store">...</i>
+                        <span class="step_number">3</span>
+                        <i class="fas fa-store"></i>
                         <span>Dégustez au restaurant</span>
                     </li>
-                </ol>
+                </ul>
             </div>
         </section>
 
         <section class="restaurants_container">
-            <h2>Restaurants</h2>
+            <h2 id="restaurants">Restaurants</h2>
 
             <article class="restaurant_card">
-                <img src="img/restaurants/palette.jpg" alt="La palette du goût">
+                    <a href="#">
+                        <img src="img/restaurants/palette.jpg" alt="La palette du goût">
 
-                <div class="test">
+                <div class="description_align">
 
-                    <div class="description_restaurant">
-                        <h3>La palette du goût</h3>
-                        <span>Ménilmontant</span>
-                    </div>
-                    
-                    <div class="hearts">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-
+                            <div class="description_restaurant">
+                                <h3>La palette du goût</h3>
+                                <span>Ménilmontant</span>
+                            </div>
+                     </a>
+                        <div class="hearts">
+                            <i class="far fa-heart"></i>
+                        </div>
                 </div>
+
             </article>
 
             <article class="restaurant_card">
-                <img src="img/restaurants/enchante.jpg" alt="La note enchantée">
+                <a href="#">
+                    <img src="img/restaurants/enchante.jpg" alt="La note enchantée">
 
-                <div class="test">
-
-                    <div class="description_restaurant">
-                        <h3>La note enchantée</h3>
-                        <span>Charonne</span>
-                    </div>
-
-                    <div class="hearts">
-                        <i class="far fa-heart"></i>
-                        <i class="fas fa-heart"></i>
-                    </div>
-
+                    <div class="description_align">
+                        <div class="description_restaurant">
+                            <h3>La note enchantée</h3>
+                            <span>Charonne</span>
+                        </div>
+                </a>
+                <div class="hearts">
+                    <i class="far fa-heart"></i>
                 </div>
+                </div>
+
             </article>
 
             <article class="restaurant_card">
-                <img src="img/restaurants/francaise.jpg" alt="À la française">
-                <div class="description_restaurant"></div>
-                <h3>À la française</h3>
-                <span>Cité Rouge</span>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+                <a href="#">
+                    <img src="img/restaurants/francaise.jpg" alt="À la française">
+                    <div class="description_align">
+                        <div class="description_restaurant">
+                            <h3>À la française</h3>
+                            <span>Cité Rouge</span>
+                        </div>
+                </a>
+                <div class="hearts">
+                    <i class="far fa-heart"></i>
                 </div>
+                </div>
+
             </article>
 
             <article class="restaurant_card">
-                <img src="img/restaurants/sens.jpg" alt="Le délice des sens">
-                <div class="description_restaurant"></div>
-                <h3>Le délice des sens</h3>
-                <span>Folie-Méricourt</span>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+                <a href="#">
+                    <img src="img/restaurants/sens.jpg" alt="Le délice des sens">
+                    <div class="description_align">
+                        <div class="description_restaurant">
+                            <h3>Le délice des sens</h3>
+                            <span>Folie-Méricourt</span>
+                        </div>
+                </a>
+                <div class="hearts">
+                    <i class="far fa-heart"></i>
+                </div>
                 </div>
             </article>
 

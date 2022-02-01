@@ -2,7 +2,9 @@
 * {
     box-sizing: border-box;
     text-decoration: none;
+    color: black;
 }
+
 
 body {
     margin: 0;
@@ -81,6 +83,7 @@ h1 {
 .restaurants_container {
     background-color: #f6f6f6;
     width: 100%;
+    padding: 25px 0 35px 0
 }
 
 .restaurant_card {
@@ -98,14 +101,50 @@ h1 {
     border-radius: 20px 20px 0 0;
 }
 
+.restaurant_card a {
+    width: 85%;
+}
+
 .description_restaurant {
     display: flex;
     flex-direction: column;
 }
 
-.test {
+.description_align {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
 }
+
+.description_restaurant h3 {
+    margin: 15px 5px 5px 15px;
+}
+
+.description_restaurant span {
+    margin: 0 5px 15px 15px;
+}
+
+
+.hearts i {
+    font-size: 22px;
+    padding-right: 15px;
+    position: relative;
+  }
+
+  .hearts i:hover {
+    opacity: 100%;
+    background: linear-gradient(0deg,#9356DC,#FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
+  .hearts i:target {
+    opacity: 100%;
+    background: linear-gradient(0deg,#9356DC,#FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold;
+  }
+
