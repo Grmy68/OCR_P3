@@ -144,16 +144,25 @@ font-weight: bold;
 }
 
 .step i {
-    padding: 0 15px 0 25px;
+    padding: 0 15px 0 30px;
     font-size: 18px;
     color: #7e7e7e;
+}
+
+.step:hover {
+    background-color:#f5edff ;
+}
+
+.step:hover i {
+    color:#9356dc ;
 }
 
 /* Restaurants list */
 .restaurants_container {
     background-color: #f6f6f6;
     width: 100%;
-    padding: 25px 0 35px 0
+    padding: 25px 0 35px 0;
+    margin-top: 50px;
 }
 
 .restaurant_card {
@@ -210,11 +219,4 @@ font-weight: bold;
     font-weight: bold;
   }
 
-  .hearts i:target {
-    opacity: 100%;
-    background: linear-gradient(0deg,#9356DC,#FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-weight: bold;
-  }
 
