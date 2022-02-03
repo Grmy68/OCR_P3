@@ -15,6 +15,9 @@ body {
 /* Header index */
 header {
     text-align: center;
+    box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+    padding: 1px;
+    position: relative;
 }
 
 .back-index {
@@ -26,22 +29,42 @@ h1 {
     font-family: 'Shrikhand', cursive;
 }
 
-
 /* search bar */
 .location {
     display: flex;
+    justify-content: center;
+    align-items: baseline;
     width: 100%;
+    margin: auto;
+    background-color: #eaeaea;
+}
+
+input {
+padding: 20px 10px 20px 15px;
+background: #eaeaea;
+font-family: roboto;
+}
+
+#search::placeholder {
+    color: rgb(75, 75, 75);
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+
+#search {
+    border: none;
+    outline-width: 0px;
+}
+
+.location i {
+    padding: 5px 5px 5px 30px;
+    color: rgb(75, 75, 75);
 }
 
 .location label {
     position: absolute;
     left: -999px;
-}
-
-.location span {
-    font-family: 'Roboto', sans-serif;
-    font-weight: bold;
-    font-size: 18px;
 }
 
 /* Info explore */
@@ -78,6 +101,24 @@ h1 {
 }
 
 /* Functions */
+
+.function ul {
+    list-style: none;
+    padding-left: 20px;
+} 
+
+.step_number {
+background-color: #9356dc;
+padding: 6px 9px 4px 8px;
+border-radius: 25px;
+color: white;
+font-size: 12px;
+}
+
+
+.steps li {
+    margin: 50px 0px;
+}
 
 /* Restaurants list */
 .restaurants_container {
