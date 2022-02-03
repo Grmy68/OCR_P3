@@ -15,7 +15,7 @@ body {
 /* Header index */
 header {
     text-align: center;
-    box-shadow: 0 0 5px rgb(0 0 0 / 25%);
+    box-shadow: 0 0 8px rgb(0 0 0 / 25%);
     padding: 1px;
     position: relative;
 }
@@ -102,14 +102,24 @@ font-family: roboto;
 
 /* Functions */
 
+.function {
+    margin: auto;
+}
+
 .function ul {
     list-style: none;
-    padding-left: 20px;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 } 
 
 .step_number {
 background-color: #9356dc;
 padding: 6px 9px 4px 8px;
+margin-left: -15px;
+position: absolute;
 border-radius: 25px;
 color: white;
 font-size: 12px;
@@ -117,7 +127,26 @@ font-size: 12px;
 
 
 .steps li {
-    margin: 50px 0px;
+    margin: 15px 0px;
+}
+
+.step {
+    box-shadow: 2px 4px 13px 5px #eaeaea;
+    background-color: #f6f6f6;
+    width: 90%;
+    padding: 30px 5px 30px 5px;
+    border-radius: 28px;
+}
+
+.step_description {
+font-size: 18px;
+font-weight: bold;
+}
+
+.step i {
+    padding: 0 15px 0 25px;
+    font-size: 18px;
+    color: #7e7e7e;
 }
 
 /* Restaurants list */
