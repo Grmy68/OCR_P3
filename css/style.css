@@ -3,6 +3,8 @@
     box-sizing: border-box;
     text-decoration: none;
     color: black;
+    padding: 0px;
+    margin: 0px;
 }
 
 
@@ -12,17 +14,16 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
+.section_title {
+    margin: 20px 0px 15px 20px;
+}
+
 /* Header index */
 header {
     text-align: center;
     box-shadow: 0 0 8px rgb(0 0 0 / 25%);
-    padding: 1px;
+    padding: 10px;
     position: relative;
-}
-
-.back-index {
-    padding: 5px 55px 5px 15px;
-    color: white;
 }
 
 h1 {
@@ -72,6 +73,7 @@ font-family: roboto;
     padding: 40px 0 70px 0;
     text-align: center;
     margin: auto;
+    margin-bottom: 50px;
     background: #f6f6f6;
     width: 100%;
 }
@@ -104,12 +106,14 @@ font-family: roboto;
 
 .function {
     margin: auto;
+    width: 100%;
 }
 
 .function ul {
     list-style: none;
-    padding: 0;
-    width: 100%;
+    padding: 2px;
+    margin: auto;
+    width: 90%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -133,7 +137,7 @@ font-size: 12px;
 .step {
     box-shadow: 2px 4px 13px 5px #eaeaea;
     background-color: #f6f6f6;
-    width: 90%;
+    width: 100%;
     padding: 30px 5px 30px 5px;
     border-radius: 28px;
 }
@@ -212,11 +216,47 @@ font-weight: bold;
   }
 
   .hearts i:hover {
-    opacity: 100%;
     background: linear-gradient(0deg,#9356DC,#FF79DA);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: bold;
   }
 
+  /* Footer */
+
+  footer {
+      background-color: #353535;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 16px 25px 20px;
+      
+  }
+
+  .footer_title {
+    font-family: 'Shrikhand', cursive;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+
+  footer ul {
+      list-style: none;
+  }
+
+  footer ul li {
+    display: flex;
+    position: relative;
+    margin: 0.5rem 0;
+}
+  
+footer ul li a {
+    color: #ffffff;
+}
+
+footer ul li a i {
+    width: 1.2rem;
+    margin-right: 0.5rem;
+    color: #ffffff;
+}
 
