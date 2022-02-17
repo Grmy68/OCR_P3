@@ -24,14 +24,14 @@ body {
 /* Header main */
 header {
     text-align: center;
-    box-shadow: 0 0 8px rgb("0 0 0 / 25%");
+    box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
     padding: 10px;
     position: relative;
 }
 
 h1 {
     font-family: 'Shrikhand', cursive;
-    font-weight: 500;
+    font-weight: normal;
 }
 
 .header_main i {
@@ -139,17 +139,17 @@ input[type="search"] {
     }
 }
 
+.steps li {
+    margin: 15px 0px;
+    cursor: pointer; 
+}
+
 .step {
     box-shadow: 2px 4px 13px 5px #eaeaea;
     background-color: #f6f6f6;
     width: 100%;
     padding: 30px 5px 30px 5px;
     border-radius: 28px;
-
-    li {
-        margin: 15px 0px;
-        cursor: pointer;  
-    }
 
     i {
         padding: 0 15px 0 30px;
@@ -276,14 +276,13 @@ font-weight: bold;
 
     h2 {
         font-family: 'Shrikhand', cursive;
-        font-family: 'Shrikhand', cursive;
         font-weight: normal;
         font-size: 28px;
         padding: 20px 0 20px 0;    
     }
 }
 
-//   Footer
+/* Footer */
 footer {
     background-color: #353535;
     display: flex;
@@ -318,13 +317,3 @@ footer {
         }
     }  
 }
-
-// .footer_title {
-//     font-family: 'Shrikhand', cursive;
-//     color: #ffffff;
-//     font-weight: normal;
-//     font-size: 20px;
-//     margin-bottom: 20px;
-// }
-
-
