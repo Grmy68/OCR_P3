@@ -6,32 +6,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b6d97aea6.js" crossorigin="anonymous"></script>
-    <nk rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
-            rel="stylesheet">
-        <link rel="icon" href="img/logo/favicon.ico">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-        <title>ohmyfood - Accueil</title>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/logo/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>ohmyfood - Accueil</title>
 
 <body>
-    <header>
+    <header class="header_main">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
 
     <main>
         <div class="location">
-            <form id="search-bar"></form>
-            <i class="fas fa-map-marker-alt"></i>
-            <label for="search">Indiquez la zone recherchée</label>
-            <input type="search" placeholder="Paris, Belleville" id="search">
+            <form id="search-bar">
+                <i class="fas fa-map-marker-alt"></i>
+                <label for="search">Indiquez la zone recherchée</label>
+                <input type="search" placeholder="Paris, Belleville" id="search">
             </form>
         </div>
 
         <section class="explore">
-            <h2>Réservez le menu qui vous convient</h2>
-            <p>Découvrez des restaurants d'exception, sélectionnés par nos soins</p>
-            <a href="#restaurants">Explorer nos restaurants</a>
+            <div class="content_explore">
+                <h2>Réservez le menu qui vous convient</h2>
+                <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
+            </div>
+            <div class="show_link">
+                <a href="#restaurants">Explorer nos restaurants</a>
+            </div>
         </section>
 
         <section class="container_function">
@@ -61,34 +65,36 @@
         </section>
 
         <section class="restaurants_container">
+            
             <h2 class="section_title" id="restaurants">Restaurants</h2>
 
             <article class="restaurant_card">
-                <a href="#">
+                <span class="new">Nouveau</span>
+                <a href="menu_palette.html">
                     <img src="img/restaurants/palette.jpg" alt="La palette du goût">
                 </a>
-
                 <div class="description_align">
-                    <a href="#">
+                    <a href="menu_palette.html">
                         <div class="description_restaurant">
                             <h3>La palette du goût</h3>
                             <span>Ménilmontant</span>
+
                         </div>
                     </a>
                     <div class="hearts">
                         <i class="far fa-heart"></i>
                     </div>
                 </div>
-
             </article>
 
             <article class="restaurant_card">
-                <a href="#">
+                <span class="new">Nouveau</span>
+                <a href="menu_enchantee.html">
                     <img src="img/restaurants/enchante.jpg" alt="La note enchantée">
                 </a>
 
                 <div class="description_align">
-                    <a href="#">
+                    <a href="menu_enchantee.html">
                         <div class="description_restaurant">
                             <h3>La note enchantée</h3>
                             <span>Charonne</span>
@@ -102,11 +108,12 @@
             </article>
 
             <article class="restaurant_card">
-                <a href="#">
+                <span class="new">Nouveau</span>
+                <a href="menu_francaise.html">
                     <img src="img/restaurants/francaise.jpg" alt="À la française">
                 </a>
                 <div class="description_align">
-                    <a href="#">
+                    <a href="menu_francaise.html">
                         <div class="description_restaurant">
                             <h3>À la française</h3>
                             <span>Cité Rouge</span>
@@ -121,12 +128,13 @@
             </article>
 
             <article class="restaurant_card">
-                <a href="#">
+                <span class="new">Nouveau</span>
+                <a href="menu_delice.html">
                     <img src="img/restaurants/sens.jpg" alt="Le délice des sens">
                 </a>
 
                 <div class="description_align">
-                    <a href="#">
+                    <a href="menu_delice.html">
                         <div class="description_restaurant">
                             <h3>Le délice des sens</h3>
                             <span>Folie-Méricourt</span>
@@ -144,15 +152,13 @@
     </main>
 
     <footer>
-        <h2 class="footer_title" >ohmyfood</h2>
-            <ul>
-                <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-                <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-                <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-        
-
+        <h2 class="footer_title">ohmyfood</h2>
+        <ul>
+            <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:welsch.jeremy@gmail.com">Contact</a></li>
+        </ul>
     </footer>
 
 </body>
