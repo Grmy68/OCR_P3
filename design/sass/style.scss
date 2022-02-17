@@ -150,6 +150,7 @@ input[type="search"] {
     width: 100%;
     padding: 30px 5px 30px 5px;
     border-radius: 28px;
+    cursor: pointer;
 
     i {
         padding: 0 15px 0 30px;
@@ -241,7 +242,7 @@ font-weight: bold;
 }
 
 .hearts i {
-    font-size: 22px;
+    font-size: 26px;
     padding-right: 15px;
     position: relative;
 

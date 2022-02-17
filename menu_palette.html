@@ -6,36 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b6d97aea6.js" crossorigin="anonymous"></script>
-    <nk rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="icon" href="img/logo/favicon.ico">
+    <link rel="stylesheet" type="text/css" href="design/css/style.css">
     <title>La palette du goût</title>
 
 <body>
-    <header>
-        <i class="fas fa-arrow-left"></i>
+    <header class="header_restaurant">
+        <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
 
 
     <main>
+        <div class="restaurant_img">
+            <img src="img/restaurants/palette.jpg" alt="La palette du goût">
+        </div>
+
         <form class="menu_container">
 
             <div class="restaurant_title">
-                <h1>La palette du goût</h1>
-                <i class="far fa-heart"></i>
-                <i class="fas fa-heart"></i>
+                <h2>La palette du goût</h2>
+                <div class="hearts">
+                    <i class="far fa-heart"></i>
+                </div>
             </div>
 
             <div class="starter_restaurant">
                 <h2 class="position_menu">Entrées</h2>
 
-                <label>
+                 <label>
+                    <input type="checkbox">
                     <h3 class="title_menu">Fricassée d'escargot</h3>
                     <span class="description_menu">Au piment d'espelette</span>
                     <span class="price_menu">25€</span>
-                </label>
+                 </label>
 
                 <label>
                     <h3 class="title_menu">Foie gras de canard mi-cuit</h3>
@@ -103,14 +110,13 @@
     </main>
 
     <footer>
-        <h2>ohmyfood</h2>
+        <h2 class="footer_title">ohmyfood</h2>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
-            <li><a href="#"></a><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
-            <li><a href="#"></a>Mentions légales</a></li>
-            <li><a href="#"></a>Contact</a></li>
+            <li><a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a></li>
+            <li><a href="#">Mentions légales</a></li>
+            <li><a href="mailto:welsch.jeremy@gmail.com">Contact</a></li>
         </ul>
-
     </footer>
 
 </body>

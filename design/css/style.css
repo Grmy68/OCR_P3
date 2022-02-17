@@ -1,78 +1,252 @@
-/*
-Error: wrong number of arguments (1 for 3) for `rgb'
-        on line 27 of C:\Users\welsc\OneDrive\Bureau\OCR\P3\design\sass\style.scss
+/* Mobile first */
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px; }
 
-22: }
-23: 
-24: /* Header main *\/
-25: header {
-26:     text-align: center;
-27:     box-shadow: 0 0 8px rgb("0 0 0 / 25%");
-28:     padding: 10px;
-29:     position: relative;
-30: }
-31: 
-32: h1 {
+a {
+  text-decoration: none;
+  color: black; }
 
-Backtrace:
-C:\Users\welsc\OneDrive\Bureau\OCR\P3\design\sass\style.scss:27
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:311:in `reformat_argument_error'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:158:in `rescue in _perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/funcall.rb:127:in `_perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `block in _perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `map'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/list_literal.rb:75:in `_perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:167:in `block in visit_children'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:166:in `visit_children'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:186:in `visit_root'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:157:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:10:in `visit'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:389:in `_render_with_sourcemap'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/engine.rb:307:in `render_with_sourcemap'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:462:in `update_stylesheet'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:443:in `on_file_changed'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/config.rb:23:in `call'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:115:in `_process_changes'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:19:in `block in loop_for'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/processor.rb:15:in `loop_for'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:84:in `_wait_for_changes'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/event/loop.rb:42:in `block in setup'
-C:/Ruby31-x64/lib/ruby/gems/3.1.0/gems/sass-listen-4.0.0/lib/sass-listen/internals/thread_pool.rb:6:in `block in add'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: wrong number of arguments (1 for 3) for `rgb'\A         on line 27 of C:\Users\welsc\OneDrive\Bureau\OCR\P3\design\sass\style.scss\A \A 22: }\A 23: \A 24: /* Header main */\A 25: header {\A 26:     text-align: center;\A 27:     box-shadow: 0 0 8px rgb(\"0 0 0 / 25%\");\A 28:     padding: 10px;\A 29:     position: relative;\A 30: }\A 31: \A 32: h1 {"; }
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  color: black; }
+
+.section_title {
+  margin: 20px 0px 15px 20px; }
+
+/* Header main */
+header {
+  text-align: center;
+  box-shadow: 0px 0px 8px 0px rgba(0, 0, 0, 0.25);
+  padding: 10px;
+  position: relative; }
+
+h1 {
+  font-family: 'Shrikhand', cursive;
+  font-weight: normal; }
+
+.header_main i {
+  display: none; }
+
+/* Header restaurant */
+.header_restaurant {
+  display: flex;
+  justify-content: center;
+  align-items: baseline; }
+
+header i {
+  position: absolute;
+  left: 20px;
+  top: 23px;
+  font-size: 22px; }
+
+/* search bar */
+.location {
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  width: 100%;
+  margin: auto;
+  background-color: #eaeaea; }
+  .location i {
+    padding: 5px 5px 5px 30px;
+    color: #4b4b4b; }
+  .location label {
+    position: absolute;
+    left: -999px; }
+
+#search {
+  border: none;
+  outline: none; }
+  #search::placeholder {
+    color: #4b4b4b;
+    font-size: 18px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; }
+
+input[type="search"] {
+  padding: 20px 10px 20px 15px;
+  background: #eaeaea;
+  font-family: 'Roboto', sans-serif; }
+
+/* Info explore */
+.explore {
+  padding: 40px 0 70px 0;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 50px;
+  background: #f6f6f6;
+  width: 100%; }
+  .explore h2 {
+    width: 65%;
+    margin: auto;
+    font-weight: bold; }
+  .explore p {
+    padding: 0px 0 40px 0;
+    width: 80%;
+    margin: auto;
+    margin-top: 20px; }
+  .explore a {
+    border: 0;
+    padding: 16px 25px;
+    font-size: 18px;
+    border-radius: 100px;
+    color: #ffffff;
+    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+    box-shadow: 1px 1px 10px #0000003d; }
+
+/* Functions */
+.function {
+  margin: auto;
+  width: 100%; }
+  .function ul {
+    list-style: none;
+    padding: 0px 0px 0px 10px;
+    margin: auto;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+
+.steps li {
+  margin: 15px 0px;
+  cursor: pointer; }
+
+.step {
+  box-shadow: 2px 4px 13px 5px #eaeaea;
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 30px 5px 30px 5px;
+  border-radius: 28px;
+  cursor: pointer; }
+  .step i {
+    padding: 0 15px 0 30px;
+    font-size: 18px;
+    color: #7e7e7e; }
+  .step:hover {
+    background-color: #f5edff; }
+    .step:hover i {
+      color: #9356dc; }
+
+.step_number {
+  background-color: #9356dc;
+  padding: 6px 9px 4px 8px;
+  margin-left: -15px;
+  position: absolute;
+  border-radius: 25px;
+  color: white;
+  font-size: 12px; }
+
+.step_description {
+  font-size: 18px;
+  font-weight: bold; }
+
+/* Restaurants list */
+.restaurants_container {
+  background-color: #f6f6f6;
+  width: 100%;
+  padding: 25px 0 35px 0;
+  margin-top: 50px; }
+
+.restaurant_card {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 25px;
+  border-radius: 25px;
+  box-shadow: 0px 1px 8px #c5c5c5; }
+  .restaurant_card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 20px 20px 0 0; }
+  .restaurant_card a {
+    width: 85%; }
+
+.new {
+  font-size: 14px;
+  font-weight: bold;
+  padding: 6px 12px;
+  position: absolute;
+  right: 8%;
+  margin-top: 13px;
+  color: #139273;
+  background: #99E2D0;
+  border-radius: 3px; }
+
+.description_restaurant {
+  display: flex;
+  flex-direction: column; }
+  .description_restaurant h3 {
+    margin: 15px 5px 5px 15px; }
+  .description_restaurant span {
+    margin: 0 5px 15px 15px; }
+
+.description_align {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between; }
+
+.hearts i {
+  font-size: 26px;
+  padding-right: 15px;
+  position: relative; }
+  .hearts i:hover {
+    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bold; }
+
+/* Restaurants pages */
+.restaurant_img img {
+  object-fit: cover;
+  width: 100%;
+  height: 250px; }
+
+.menu_container {
+  background-color: #f6f6f6;
+  border-top-left-radius: 45px;
+  border-top-right-radius: 45px;
+  width: 100%;
+  position: relative;
+  margin-top: -50px; }
+
+.restaurant_title {
+  display: flex;
+  justify-content: space-around;
+  align-items: baseline; }
+  .restaurant_title h2 {
+    font-family: 'Shrikhand', cursive;
+    font-weight: normal;
+    font-size: 28px;
+    padding: 20px 0 20px 0; }
+
+/* Footer */
+footer {
+  background-color: #353535;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 16px 25px 20px; }
+  footer h2 {
+    font-family: 'Shrikhand', cursive;
+    color: #ffffff;
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 20px; }
+  footer ul {
+    list-style: none; }
+    footer ul li {
+      display: flex;
+      position: relative;
+      margin: 5px 0; }
+      footer ul li a {
+        color: #ffffff; }
+        footer ul li a i {
+          width: 20px;
+          margin-right: 5px;
+          color: #ffffff; }
+
+/*# sourceMappingURL=style.css.map */
