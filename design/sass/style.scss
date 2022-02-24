@@ -64,6 +64,7 @@ header i {
     i {
         padding: 5px 5px 5px 30px;
         color: rgb(75, 75, 75);
+        cursor: pointer;
     }
 
     label {
@@ -269,12 +270,38 @@ font-weight: bold;
     position: relative;
     margin-top: -50px;
     padding-bottom: 1px;
+
+    label {
+        background-color: #ffffff;
+        box-shadow: 0px 1px 8px #eaeaea;
+        border-radius: 15px;
+        content: inherit;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-end;
+        width: 92%;
+        margin: auto;
+        margin-bottom: 15px;
+        padding: 13px 10px 13px 10px;
+
+        h3 {
+            font-size: 16px;
+            margin-bottom: 5px;
+        }
+
+        p {
+            font-size: 14px;
+            font-weight: 300;
+        }
+    }
 }
 
 .restaurant_title {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: baseline;
+    padding: 10px 15px 0px 15px;
 
     h2 {
         font-family: 'Shrikhand', cursive;
@@ -303,45 +330,6 @@ font-weight: bold;
     }
 }
 
-.restaurant_title {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    padding: 10px 15px 0 15px;
-}
-
-.restaurant_title h2 {
-      font-family: 'Shrikhand', cursive;
-      font-weight: normal;
-      font-size: 28px;
-      padding-top: 20px;
-}
-  
-.menu_container label {
-              background-color: #ffffff;
-              box-shadow: 0px 1px 8px #eaeaea;
-              border-radius: 15px;
-              content: inherit;
-              display: flex;
-              flex-direction: row;
-              justify-content: space-between;
-              align-items: flex-end;
-              width: 92%;
-              margin: auto;
-              margin-bottom: 15px;
-              padding: 13px 10px 13px 10px;
-}
-      
-.menu_container h3 {
-              font-size: 16px;
-              margin-bottom: 5px;
-}
-      
-.menu_container p {
-              font-size: 14px;
-              font-weight: 300;
-}
-      
 .price_menu {
               position: absolute;
               right: 9%;
