@@ -301,7 +301,7 @@ font-weight: bold;
     display: flex;
     justify-content: space-between;
     align-items: baseline;
-    padding: 10px 15px 0px 15px;
+    padding: 10px 15px 10px 15px;
 
     h2 {
         font-family: 'Shrikhand', cursive;
@@ -311,22 +311,26 @@ font-weight: bold;
     }
 }
 
-.position_menu {
-    font-size: 20px;
-    margin-bottom: 20px;
-    text-transform: uppercase;
-    font-weight: 400;
-    position: relative;
-    margin-left: 15px;
+.dishes_restaurants {
+    margin-bottom: 40px;
 
-    &::after {
-        content: "";
-        width: 50px;
-        height: 4px;
-        background-color: #99e2d0;
-        position: absolute;
-        bottom: -10px;
-        left: 1px;  
+    h2 {
+        font-size: 20px;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        font-weight: 400;
+        position: relative;
+        margin-left: 15px;
+
+        &::after {
+            content: "";
+            width: 50px;
+            height: 4px;
+            background-color: #99e2d0;
+            position: absolute;
+            bottom: -10px;
+            left: 1px;  
+        }
     }
 }
 
