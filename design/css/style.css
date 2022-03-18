@@ -1,3 +1,4 @@
+/* Colors */
 /* Mobile first */
 * {
   box-sizing: border-box;
@@ -6,13 +7,13 @@
 
 a {
   text-decoration: none;
-  color: black; }
+  color: #000000; }
 
 body {
   margin: 0;
   padding: 0;
   font-family: 'Roboto', sans-serif;
-  color: black; }
+  color: #000000; }
 
 .section_title {
   margin: 20px 0px 15px 20px; }
@@ -26,7 +27,17 @@ header {
 
 h1 {
   font-family: 'Shrikhand', cursive;
-  font-weight: normal; }
+  font-weight: normal;
+  animation: header-load 500ms 480ms both;}
+
+  @keyframes header-load {
+    0% {
+    opacity: 0;}
+    100% {
+    opacity: 1;}
+  }
+
+  
 
 .header_main i {
   display: none; }
@@ -60,8 +71,7 @@ header i {
     left: -999px; }
 
 #search {
-  border: none;
-  outline: none; }
+  border: none; }
   #search::placeholder {
     color: #4b4b4b;
     font-size: 18px;
@@ -75,29 +85,29 @@ input[type="search"] {
 
 /* Info explore */
 .explore {
-  padding: 40px 0 70px 0;
   text-align: center;
   margin: auto;
   margin-bottom: 50px;
   background: #f6f6f6;
-  width: 100%; }
+  width: 100%;
+  padding-bottom: 80px; }
   .explore h2 {
-    width: 65%;
     margin: auto;
     font-weight: bold; }
   .explore p {
-    padding: 0px 0 40px 0;
-    width: 80%;
     margin: auto;
-    margin-top: 20px; }
+    margin-top: 15px; }
   .explore a {
     border: 0;
     padding: 16px 25px;
     font-size: 18px;
     border-radius: 100px;
     color: #ffffff;
-    background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+    background-image: linear-gradient(0deg, #9256dc, #ff79da);
     box-shadow: 1px 1px 10px #0000003d; }
+
+.content_explore {
+  padding: 30px 50px 50px 50px; }
 
 /* Functions */
 .function {
@@ -113,8 +123,7 @@ input[type="search"] {
     align-items: center; }
 
 .steps li {
-  margin: 15px 0px;
-  cursor: pointer; }
+  margin: 15px 0px;}
 
 .step {
   box-shadow: 2px 4px 13px 5px #eaeaea;
@@ -130,10 +139,10 @@ input[type="search"] {
   .step:hover {
     background-color: #f5edff; }
     .step:hover i {
-      color: #9356dc; }
+      color: #9256dc; }
 
 .step_number {
-  background-color: #9356dc;
+  background-color: #9256dc;
   padding: 6px 9px 4px 8px;
   margin-left: -15px;
   position: absolute;
@@ -194,18 +203,27 @@ input[type="search"] {
 .hearts i {
   font-size: 26px;
   padding-right: 15px;
-  position: relative; }
+  position: relative;}
+
   .hearts i:hover {
-    background: linear-gradient(0deg, #9356DC, #FF79DA);
+    background: linear-gradient(25deg, #9256dc, #ff79da);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-weight: bold; }
+    font-weight: bold;}
 
 /* Restaurants pages */
 .restaurant_img img {
   object-fit: cover;
   width: 100%;
-  height: 250px; }
+  height: 250px;
+  animation: img-load 600ms 500ms ease-in both;}
+
+@keyframes img-load {
+    0% {transform: scale(1);
+    opacity: 0;}
+    100% { transform: scale(1.015);
+    opacity: 1;}
+}
 
 .menu_container {
   background-color: #f6f6f6;
@@ -219,22 +237,50 @@ input[type="search"] {
     background-color: #ffffff;
     box-shadow: 0px 1px 8px #eaeaea;
     border-radius: 15px;
-    content: inherit;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-end;
-    width: 92%;
+    align-items: center;
+    width: 95%;
     margin: auto;
     margin-bottom: 15px;
-    padding: 13px 10px 13px 10px; }
-    .menu_container label h3 {
-      font-size: 16px;
-      margin-bottom: 5px; }
-    .menu_container label p {
-      font-size: 14px;
-      font-weight: 300; }
+    padding: 0px 10px;
+    overflow: hidden;
+    opacity: 0;
+    animation: menu-appear 1400ms ease-in-out both;}
 
+.text_menu {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  margin-right: 10px; }
+  .text_menu h3 {
+    font-size: 16px;
+      margin-bottom: 5px;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap; }
+  .text_menu p {
+      font-size: 14px;
+      font-weight: 300;
+      text-overflow: ellipsis;
+      overflow: hidden;
+      white-space: nowrap;
+}
+
+@keyframes menu-appear {
+  0% {
+  transform: translateY(15px);
+  opacity: 0;}
+  100% {
+  transform: translateY(0px);
+  opacity: 1;}
+}
+      
+.menu_container label:nth-of-type(1) {animation-delay: 100ms;}
+.menu_container label:nth-of-type(2) {animation-delay: 500ms;}
+.menu_container label:nth-of-type(3) {animation-delay: 900ms;}
+.menu_container label:nth-of-type(4) {animation-delay: 1300ms;}
+ 
 .restaurant_title {
   display: flex;
   justify-content: space-between;
@@ -243,13 +289,13 @@ input[type="search"] {
   .restaurant_title h2 {
     font-family: 'Shrikhand', cursive;
     font-weight: normal;
-    font-size: 28px;
+    font-size: 26px;
     padding: 20px 0 20px 0; }
 
 .dishes_restaurants {
   margin-bottom: 40px; }
   .dishes_restaurants h2 {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 20px;
     text-transform: uppercase;
     font-weight: 400;
@@ -257,17 +303,18 @@ input[type="search"] {
     margin-left: 15px; }
     .dishes_restaurants h2::after {
       content: "";
-      width: 50px;
+      width: 40px;
       height: 4px;
-      background-color: #99e2d0;
+      background-color: #99E2D0;
       position: absolute;
       bottom: -10px;
       left: 1px; }
 
 .price_menu {
-  position: absolute;
-  right: 9%;
-  font-weight: bold; }
+  font-weight: bold;
+    margin: 0 20px 12px 0;
+    text-align: center;
+    font-size: 14px; }
 
 .btn_command {
   border: 0;
@@ -275,13 +322,52 @@ input[type="search"] {
   font-size: 16px;
   border-radius: 100px;
   color: #ffffff;
-  background-image: linear-gradient(0deg, #9356DC, #FF79DA);
+  background-image: linear-gradient(0deg, #9256dc, #ff79da);
   box-shadow: 1px 1px 10px #0000003d;
   cursor: pointer;
   display: flex;
   text-align: center;
   margin: 50px auto 50px auto;
   width: auto; }
+
+.check_bloc {
+  display: flex;
+  align-items: flex-end;
+  width: 34px;
+  transition-duration: 750ms;
+}
+
+.checked_background i {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    color: white;
+    transition-duration: 680ms;
+}
+
+.checked_background {
+    background: #99E2D0;
+    padding: 22px;
+}
+
+.menu_container label:hover .check_bloc {
+  width: 99px;
+  transition-delay: 100ms;
+  transition-duration: 750ms;
+}
+
+.menu_container label:hover .checked_background i {
+  transform: rotate(1turn);
+  transition-delay: 100ms;
+  transition-duration: 680ms;
+}
+
+input[type="checkbox"] {
+  position: absolute;
+  left: -999px;
+}
 
 /* Footer */
 footer {
@@ -306,6 +392,7 @@ footer {
         footer ul li a i {
           width: 20px;
           margin-right: 5px;
-          color: #ffffff; }
+          color: #ffffff;
+}
 
 /*# sourceMappingURL=style.css.map */
