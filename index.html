@@ -7,19 +7,28 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b6d97aea6.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
+        rel="stylesheet">
     <link rel="icon" href="img/logo/favicon.ico">
     <link rel="stylesheet" type="text/css" href="design/css/style.css">
     <title>ohmyfood - Accueil</title>
 
 <body>
-    <header class="header_main">
+
+    <section class="animation animation-loader">
+        <span class="text_oh">oh</span>
+        <span class="text_my">my</span>
+        <span class="text_food">food!</span><br>
+        <span class="loader loader-triple"></span>
+    </section>
+
+    <header class="index_header index_appear">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
 
-    <main>
+    <main class="index_appear">
         <div class="location">
             <form id="search-bar">
                 <i class="fas fa-map-marker-alt"></i>
@@ -65,7 +74,7 @@
         </section>
 
         <section class="restaurants_container">
-            
+
             <h2 class="section_title" id="restaurants">Restaurants</h2>
 
             <article class="restaurant_card">
@@ -151,7 +160,7 @@
 
     </main>
 
-    <footer>
+    <footer class="index_appear">
         <h2 class="footer_title">ohmyfood</h2>
         <ul>
             <li><a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a></li>
