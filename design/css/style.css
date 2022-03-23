@@ -17,7 +17,7 @@ body {
   font-family: 'Roboto', sans-serif;
   color: #000000;}
 
-.section_title {margin: 20px 0px 15px 20px; }
+.section_title {margin: 20px 0px 25px 20px; }
 
 /* Animation index */
 
@@ -47,11 +47,11 @@ body {
 
 .index_appear {animation: whitepage 3s;}
 
-/* @keyframes whitepage {
+@keyframes whitepage {
   0% {opacity: 0;}
   80% {opacity: 0;}
   100% {opacity: 1;}
-  } */
+  }
 
 
 .loader-triple {
@@ -204,7 +204,7 @@ input[type="search"] {
     font-size: 18px;
     border-radius: 100px;
     color: #ffffff;
-    background-image: linear-gradient(0deg, #9256dc, #ff79da);
+    background-image: linear-gradient(355deg, #9256dc, #ff79da);
     box-shadow: 1px 1px 10px #0000003d; }
 
 .content_explore {
@@ -223,8 +223,12 @@ input[type="search"] {
     flex-direction: column;
     align-items: center; }
 
-.steps li {
-  margin: 15px 0px;}
+/* .steps li {
+  margin: 15px 0px;} */
+
+  .function li {
+    margin-bottom: 25px;
+  }
 
 .step {
   box-shadow: 2px 4px 13px 5px #eaeaea;
@@ -309,16 +313,14 @@ input[type="search"] {
 
 
 .regular-heart {
-  color: black;
-}
+  color: black;}
 
 .solid-heart {
   opacity: 0;
-  background: linear-gradient(25deg, #9256dc, #ff79da);
+  background: linear-gradient(220deg, #9256dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
+  -webkit-text-fill-color: transparent;}
 
 .hearts:hover .regular-heart {
  opacity: 0;
@@ -328,20 +330,6 @@ input[type="search"] {
   opacity: 1;
   transition-duration: 0.4s;
 }
-
-
-
-/* .hearts i:hover {
-  background: linear-gradient(25deg, #9256dc, #ff79da);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  font-weight: bold;} */
-
-
-
- 
-
 
 /* Restaurants pages */
 .restaurant_img img {
@@ -459,7 +447,7 @@ input[type="search"] {
   font-size: 16px;
   border-radius: 100px;
   color: #ffffff;
-  background-image: linear-gradient(0deg, #9256dc, #ff79da);
+  background-image: linear-gradient(355deg, #9256dc, #ff79da);
   box-shadow: 1px 1px 10px #0000003d;
   cursor: pointer;
   display: flex;
@@ -578,6 +566,10 @@ width: 100%;
 
 .new {
   right: 3%;
+}
+
+.hearts i {
+  right: 4%;
 }
 
 footer {
