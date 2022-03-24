@@ -236,7 +236,7 @@ input[type="search"] {
   .step i {
     margin-right: 15px;
     font-size: 18px;
-    color: #a1a1a1;
+    color: #a1a1a1; 
     position: absolute;
     left: 9%;}
   .step:hover {
