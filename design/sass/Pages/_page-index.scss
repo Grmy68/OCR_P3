@@ -110,6 +110,7 @@ input[type="search"] {
 	padding: 25px 12px;
 }
 .restaurant_card {
+    position: relative;
 	margin-bottom: 25px;
 	border-radius: 25px;
 	box-shadow: 0px 8px 20px $grey-rgba-20;
@@ -130,8 +131,8 @@ input[type="search"] {
     font-weight: bold;
     padding: 6px 12px;
     position: absolute;
-    right: 8%;
-    margin-top: 13px;
+    right: 3%;
+    top: 13px;
     color: $new-text-color;
     background: $new-bg-color;
     border-radius: 3px;
