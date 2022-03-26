@@ -6,28 +6,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/6b6d97aea6.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Shrikhand&display=swap"
-        rel="stylesheet">
     <link rel="icon" href="img/logo/favicon.ico">
-    <link rel="stylesheet" type="text/css" href="design/css/style.css">
+    <link rel="stylesheet" type="text/css" href="design/css/main.css">
     <title>ohmyfood - Accueil</title>
 </head>
 
 <body>
-
+<!-- LOAD SPINNER -->
     <div class="animation animation-loader">
         <span class="text_scale">ohmyfood!</span><br>
         <span class="loader loader-triple"></span>
     </div>
 
+<!-- HEADER INDEX -->
     <header class="index_header index_appear">
         <a href="index.html"><i class="fas fa-arrow-left"></i></a>
         <h1>ohmyfood</h1>
     </header>
-
+<!-- MAIN -->
     <main class="index_appear">
+        <!-- LOCATION -->
         <div class="location">
             <form id="search-bar">
                 <i class="fas fa-map-marker-alt"></i>
@@ -36,21 +34,23 @@
             </form>
         </div>
 
+        <!-- EXPLORE -->
         <section class="explore">
             <div class="content_explore">
                 <h2>Réservez le menu qui vous convient</h2>
                 <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             </div>
-            <div class="show_link">
+            <div>
                 <a class="btn_gradiant brightness_hover" href="#restaurants">Explorer nos restaurants</a>
             </div>
         </section>
 
+        <!-- FUNCTION -->
         <section class="function">
             <h2 class="section_title">Fonctionnement</h2>
             
                 
-
+            <!-- FUNCTION STEPS -->
                 <ul class="steps">
                     <li class="step">
                         <span class="step_number">1</span>
@@ -73,6 +73,7 @@
             
         </section>
 
+        <!-- RESTAURANTS LIST -->
         <section class="restaurants_container">
 
             <h2 class="section_title" id="restaurants">Restaurants</h2>
@@ -159,7 +160,8 @@
         </section>
 
     </main>
-
+    
+<!-- FOOTER -->
     <footer class="index_appear">
         <h2 class="footer_title">ohmyfood</h2>
         <ul>

@@ -1,0 +1,147 @@
+/* Media Queries */
+
+        /* Tablet */
+@media screen and (min-width: 768px) {
+/* common heart-like */
+.hearts i {
+    right: 4%;
+}
+
+/* function */
+.function ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px 0 0 0;
+}
+    
+.steps li {
+    width: 28%;
+    padding: 50px 5px;
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    position: relative;
+}
+.step i {
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 22px;
+}
+    
+.step_number {
+    background-color: $purple-primary;
+    padding: 6px 12px 6px 11px;
+    position: absolute;
+    left: -10px;
+    bottom: 80px;
+    border-radius: 25px;
+    color: $white;
+    font-size: 16px;
+}
+    
+.step_description {
+    position: absolute;
+    bottom: 28px;
+    font-size: 16px;
+}
+    
+.section_title {
+     width: 90%;
+    margin-bottom: 25px;
+}
+/* restaurants list */   
+.restaurant_card {
+    width: 45%;
+    margin: auto;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.new {
+    right: 3%;
+}
+
+    /* restaurant page */   
+.restaurants_container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.menu_container {
+    padding: 0 65px;
+}
+    
+.restaurant_title {
+    padding-left: 35px;
+}
+
+/* footer */
+footer {
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px 90px 25px 90px;
+} 
+}
+ 
+
+
+        /* PC */
+@media screen and (min-width: 992px) {
+    /* base */
+body {
+    background-color: $grey-eaeaea;
+} 
+    
+main {
+    max-width: 1200px;
+    margin: auto;
+    box-shadow: 0px 10px 15px $grey-rgba-50;
+}
+
+/* boutons hover */
+.brightness_hover:hover {
+    filter: brightness(1.08);
+    box-shadow: 0px 8px 20px $grey-rgba-50;
+}
+
+    /* index page */
+.restaurant_card {
+    width: 45%;
+}
+
+/* Function */
+.function {
+    padding: 0 55px;
+}
+
+    /* restaurant page */
+.restaurants_container {
+    padding: 25px 55px 35px 55px;
+}
+    
+.header_restaurant {
+    padding-left: -27px;
+}
+.form {
+    padding: 0 10px;
+}
+    
+.menu_container {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 20px 0;
+    padding: 0;
+}
+    
+.restaurant_title {
+    padding-left: 15px;
+}
+    
+.dishes_restaurants {
+    width: 33%;
+    margin: 0;
+}
+}

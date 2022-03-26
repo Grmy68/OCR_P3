@@ -1,0 +1,156 @@
+/* common */
+.section_title {
+    margin: 20px 0px 25px 20px;
+}
+/* search bar */
+.location {
+    display: flex;
+    justify-content: center;
+    background-color: $grey-eaeaea; }
+    .location i {
+      padding: 5px 5px 5px 30px;
+      color: $dark-grey;
+      cursor: pointer; }
+    .location label {
+      position: absolute;
+      left: -999px;
+}
+  
+#search {
+    border: none;
+    outline: none;}
+    #search::placeholder {
+      color: $dark-grey;
+      font-size: 18px;
+      font-family: $roboto;
+      font-weight: bold;
+      transition-duration: 0.5s;
+}
+  
+input[type="search"] {
+    padding: 20px 10px 20px 15px;
+    background: $grey-eaeaea;
+    font-family: $roboto;
+}
+  
+#search-bar:hover ::placeholder {
+      opacity: 0.3;
+      transition-duration: 0.5s;
+}
+  
+/* Info explore */
+.explore {
+    text-align: center;
+    margin-bottom: 50px;
+    background: $grey-f6f6f6;
+    padding-bottom: 80px;
+    .explore p {
+      margin-top: 15px;}
+}
+  
+.content_explore {
+    padding: 30px 50px 50px 50px;
+}
+  
+/* Functions */
+.function ul {
+      list-style: none;
+      padding: 10px 20px 0px 20px;}
+.function li {
+      margin-bottom: 25px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      position: relative;
+      align-items: center;
+}
+  
+.step {
+	box-shadow: 0px 8px 20px $grey-rgba-20;
+	background-color: $grey-f6f6f6;
+	width: 100%;
+	padding: 30px 5px 30px 5px;
+	border-radius: 28px;
+	i {
+		margin-right: 15px;
+		font-size: 18px;
+		color: $step-icon-color;
+		position: absolute;
+		left: 9%;
+	}
+	&:hover {
+		background-color: $function-hover;
+		transition-duration: 0.4s;
+		i {
+			color: $purple-primary;
+			transition-duration: 0.8s;
+		}
+	}
+}
+  
+.step_number {
+    background-color: $purple-primary;
+    padding: 6px 9px 4px 8px;
+    position: absolute;
+    left: -10px;
+    border-radius: 25px;
+    color: $white;
+    font-size: 12px;
+}
+  
+.step_description {
+    font-size: 18px;
+    font-weight: bold;
+}
+  
+/* Restaurants list */  
+.restaurants_container {
+	background-color: $grey-f6f6f6;
+	margin-top: 50px;
+	padding: 25px 12px;
+}
+.restaurant_card {
+	margin-bottom: 25px;
+	border-radius: 25px;
+	box-shadow: 0px 8px 20px $grey-rgba-20;
+	transition-duration: 0.5s;
+	img {
+		width: 100%;
+		height: 180px;
+		object-fit: cover;
+		border-radius: 20px 20px 0 0;
+	}
+	a {
+		width: 80%;
+	}
+}
+  
+.new {
+    font-size: 14px;
+    font-weight: bold;
+    padding: 6px 12px;
+    position: absolute;
+    right: 8%;
+    margin-top: 13px;
+    color: $new-text-color;
+    background: $new-bg-color;
+    border-radius: 3px;
+}
+  
+.description_restaurant {
+	display: flex;
+	flex-direction: column;
+	h3 {
+		margin: 15px 5px 5px 15px;
+	}
+	span {
+		margin: 0 5px 15px 15px;
+	}
+}
+
+.description_align {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  

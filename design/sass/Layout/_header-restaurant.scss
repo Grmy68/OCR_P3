@@ -1,0 +1,19 @@
+  /* Header restaurant */
+.header_restaurant {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 8px $grey-rgba-50;
+    z-index: 1; 
+}
+  
+header i {
+    position: absolute;
+    left: 20px;
+    top: 23px;
+    font-size: 22px;
+    animation: header-load 500ms 480ms both;
+}
+
+.h1_restaurant {
+  animation: header-load 500ms 480ms both;
+}

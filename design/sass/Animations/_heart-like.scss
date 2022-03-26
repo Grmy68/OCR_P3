@@ -1,0 +1,29 @@
+// Hearts like animation
+.hearts {
+    i {
+        font-size: 26px;
+        position: absolute;
+        right: 9%;
+        transform: translateY(-10px);
+    }
+    &:hover .regular-heart {
+        opacity: 0;
+        transition-duration: 0.5s;
+    }
+}
+  
+.regular-heart {
+    color: $black;
+}
+  
+.solid-heart {
+    opacity: 0;
+    background: $gradiant-pink-heart;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    &:hover {
+        opacity: 1;
+        transition-duration: 0.4s;
+    }
+}

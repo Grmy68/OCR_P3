@@ -1,0 +1,25 @@
+/* Footer */
+footer {
+    background-color: $footer-color;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 16px 25px 20px; }
+    footer h2 {
+      font-family: $shrikhand;
+      color: $white;
+      font-weight: normal;
+      font-size: 20px;
+      margin-bottom: 20px; }
+    footer ul {
+      list-style: none; }
+      footer ul li {
+        display: flex;
+        position: relative;
+        margin: 5px 0; }
+        footer ul li a {
+          color: $white; }
+          footer ul li a i {
+            width: 20px;
+            margin-right: 5px;
+            color: $white;
+}
