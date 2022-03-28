@@ -13,52 +13,162 @@
       opacity: 1;}
 }
 
-.form {
+.menus_form {
     border-top-right-radius: 45px;
     border-top-left-radius: 45px;
     background-color: $grey-f6f6f6;
     margin-top: -43px;
+	padding: 0 10px;
     position: relative;
     text-align: center;
-}
-  
-.menu_container {
-	background-color: $grey-f6f6f6;
-	position: relative;
-	padding-bottom: 10px;
-	label {
-		background-color: $white;
-		box-shadow: 0px 8px 20px $grey-rgba-20;
-		border-radius: 15px;
+	.restaurant_title {
 		display: flex;
-		flex-direction: row;
 		justify-content: space-between;
 		align-items: center;
-		width: 95%;
-		margin: auto;
-		margin-bottom: 15px;
-		padding: 0px 10px;
-		overflow: hidden;
-		opacity: 0;
-		animation: menu-appear 1400ms ease-in-out both;
-		&:nth-of-type(1) {
-			animation-delay: 100ms;
+		padding: 10px 15px 10px 15px;
+		position: relative;
+		h2 {
+			font-family: $shrikhand;
+			font-weight: normal;
+			font-size: 26px;
+			padding: 20px 0 20px 0;
+			margin-right: 40px;
+			position: relative;
+			text-overflow: ellipsis;
+			overflow: hidden;
+			white-space: nowrap;
 		}
-		&:nth-of-type(2) {
-			animation-delay: 500ms;
+		.restaurant_hearts {
+				position: absolute;
+				right: 60px;
+				bottom: 65px;}
+	}
+	.menu_container {
+		background-color: $grey-f6f6f6;
+		position: relative;
+		.dishes_restaurants {
+			margin-bottom: 40px;
+			h2 {
+				font-size: 18px;
+				margin-bottom: 20px;
+				text-transform: uppercase;
+				font-weight: 400;
+				position: relative;
+				margin-left: 15px;
+				text-align: initial;
+				&::after {
+					content: "";
+					width: 40px;
+					height: 4px;
+					background-color: $green-primary;
+					position: absolute;
+					bottom: -10px;
+					left: 1px;
+				}
+			}
+			label {
+				background-color: $white;
+				box-shadow: 0px 8px 20px $grey-rgba-20;
+				border-radius: 15px;
+				display: flex;
+				flex-direction: row;
+				justify-content: space-between;
+				align-items: center;
+				width: 95%;
+				margin: auto;
+				margin-bottom: 15px;
+				padding: 0px 10px;
+				overflow: hidden;
+				opacity: 0;
+				animation: menu-appear 1400ms ease-in-out both;
+				&:nth-of-type(1) {
+					animation-delay: 100ms;
+				}
+				&:nth-of-type(2) {
+					animation-delay: 500ms;
+				}
+				&:nth-of-type(3) {
+					animation-delay: 900ms;
+				}
+				&:nth-of-type(4) {
+					animation-delay: 1300ms;
+				}
+				&:nth-of-type(5) {
+					animation-delay: 1700ms;
+				}
+				input[type="checkbox"] {
+					position: absolute;
+					left: -999px;
+				}
+				.text_menu {
+					text-overflow: ellipsis;
+					overflow: hidden;
+					margin-right: 10px;
+					display: flex;
+					flex-direction: column;
+					text-align: initial;
+				}
+				.title_menu {
+					font-size: 16px;
+					margin-bottom: 5px;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+					font-weight: bold;
+				} 
+				.description_menu {
+					font-size: 14px;
+					font-weight: 300;
+					text-overflow: ellipsis;
+					overflow: hidden;
+					white-space: nowrap;
+				}
+				.check_bloc {
+					display: flex;
+					align-items: flex-end;
+					width: 29px;
+					transition-duration: 750ms;
+				}
+				.price_menu {
+					font-weight: bold;
+					margin: 0 20px 12px 0;
+					text-align: center;
+					font-size: 14px;
+				}
+				.checked_background {
+					background: $green-primary;
+					padding: 22px;
+					i {
+						text-align: center;
+						display: flex;
+						align-items: center;
+						justify-content: center;
+						font-size: 22px;
+						color: $white;
+						transition-duration: 680ms;
+					}
+				}
+				&:hover {
+					.check_bloc {
+						width: 99px;
+						transition-delay: 100ms;
+						transition-duration: 750ms;
+					}
+					.checked_background i {
+						transform: rotate(1turn);
+						transition-delay: 100ms;
+						transition-duration: 680ms;
+					}
+				}
+			}
 		}
-		&:nth-of-type(3) {
-			animation-delay: 900ms;
-		}
-		&:nth-of-type(4) {
-			animation-delay: 1300ms;
-		}
-        &:nth-of-type(5) {
-            animation-delay: 1700ms;
-        }
+	}
+	.btn_cmd {
+		padding: 16px 40px !important;
+		margin-bottom: 80px !important;
 	}
 }
-
+  
 @keyframes menu-appear {
     0% {
     transform: translateY(15px);
@@ -66,124 +176,4 @@
     100% {
     transform: translateY(0px);
     opacity: 1;}
-}
-  
-.text_menu {
-    text-overflow: ellipsis;
-    overflow: hidden;
-    margin-right: 10px;
-    display: flex;
-    flex-direction: column;
-    text-align: initial;
-}
-  
-.title_menu {
-    font-size: 16px;
-    margin-bottom: 5px;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-    font-weight: bold;
-}
-  
-.description_menu {
-    font-size: 14px;
-    font-weight: 300;
-    text-overflow: ellipsis;
-    overflow: hidden;
-    white-space: nowrap;
-}
-        
-.restaurant_title {
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	padding: 10px 15px 10px 15px;
-	h2 {
-		font-family: $shrikhand;
-		font-weight: normal;
-		font-size: 26px;
-		padding: 20px 0 20px 0;
-		margin-right: 40px;
-		position: relative;
-		text-overflow: ellipsis;
-		overflow: hidden;
-		white-space: nowrap;
-	}
-}
-
-  
-.dishes_restaurants {
-	margin-bottom: 40px;
-	h2 {
-		font-size: 18px;
-		margin-bottom: 20px;
-		text-transform: uppercase;
-		font-weight: 400;
-		position: relative;
-		margin-left: 15px;
-		text-align: initial;
-		&::after {
-			content: "";
-			width: 40px;
-			height: 4px;
-			background-color: $green-primary;
-			position: absolute;
-			bottom: -10px;
-			left: 1px;
-		}
-	}
-}
-  
-.price_menu {
-    font-weight: bold;
-    margin: 0 20px 12px 0;
-    text-align: center;
-    font-size: 14px;
-}
-  
-.btn_cmd {
-    padding: 16px 40px !important;
-    margin-bottom: 80px;
-    border: 0;
-    cursor: pointer;
-}
-  
-.check_bloc {
-    display: flex;
-    align-items: flex-end;
-    width: 29px;
-    transition-duration: 750ms;
-}
-  
-.checked_background {
-	background: $green-primary;
-	padding: 22px;
-	i {
-		text-align: center;
-		display: flex;
-		align-items: center;
-		justify-content: center;
-		font-size: 22px;
-		color: $white;
-		transition-duration: 680ms;
-	}
-}
-  
-.menu_container label:hover {
-    .check_bloc {
-        width: 99px;
-        transition-delay: 100ms;
-        transition-duration: 750ms;
-    }
-    .checked_background i {
-        transform: rotate(1turn);
-        transition-delay: 100ms;
-        transition-duration: 680ms;
-    }
-}
-  
-input[type="checkbox"] {
-    position: absolute;
-    left: -999px;
 }
