@@ -3,9 +3,9 @@
 <strong>Projet 3 de la formation Développeur Web - OpenClassrooms.</strong><br><br><br>
 
 
-<img src="img/logo/ohmyfood.png" alt="Logo ohmyfood" width=500/><br>
+<div style="text-align:center"><img src="img/logo/readme.png" alt="Présentation ohmyfood" width="800"/></div><br>
 
-<strong>lien vers le site</strong><br>
+<em><u>Lien vers le site du projet</u></em><br>
 https://grmy68.github.io/OCR_P3/
 
 
@@ -37,32 +37,35 @@ produits de qualité.
 Logo et titres: Shrikhand
 Texte: Roboto
 
-<h3>Couleurs</h3>
-Primaire Secondaire Tertiaire<br>
-<img src="https://color-hex.org/colors/9356dc.png" alt="couleur #9356DC" width=20px height=20px>
-#9356DC<br>
-<img src="https://www.colorhexa.com/ff79da.png" alt="couleur #9356DC" width=20px height=20px>
-#FF79DA<br>
-<img src="https://colorate.azurewebsites.net/SwatchColor/99E2D0" alt="couleur #9356DC" width=20px height=20px>
-#99E2D0<br>
+<h3>Couleurs:</h3><br>
 
-<h3>Objectifs</h3>
+
+<img src="https://color-hex.org/colors/9356dc.png" alt="couleur #9356DC" width=20px height=20px>Primaire #9356DC<br><br>
+
+
+<img src="https://www.colorhexa.com/ff79da.png" alt="couleur #FF79DA" width=20px height=20px>&nbsp;→&nbsp;Secondaire #FF79DA<br><br>
+
+
+<img src="https://colorate.azurewebsites.net/SwatchColor/99E2D0" alt="couleur #99E2D0" width=20px height=20px>&nbsp;→&nbsp;Tertiaire #99E2D0<br><br>
+
+
+<h3>Objectifs:</h3>
 Nous souhaitons ouvrir nos services à la capitale française.<br>
 → Phase 1 : Développer un site proposant le menu de 4 grands restaurants parisiens.<br>
 → Phase 2 : Permettre la réservation en ligne et la composition de menus.<br>
 
-<h3>Budget</h3>
+<h3>Budget:</h3>
 20 000 €
 
 
-<h3>Technologies<h3><br>
+<h3>Technologies:<h3>
 → Le développement devra se faire en CSS, sans JavaScript.<br>
 → Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
 plus.<br>
 → Aucun code CSS ne devra être appliqué via un attribut style dans une balise HTML.<br>
 
 
-<h3>Compatibilité</h3>
+<h3>Compatibilité:</h3>
 La cible étant les personnes connectées et pressées, le site sera développé en utilisant
 l’approche mobile-first. Pour cette raison, seules des maquettes mobiles seront réalisées.
 Sur tablette et desktop, le site devra s’adapter, mais ces supports n’étant pas prioritaires,
@@ -70,25 +73,25 @@ leur mise en page est libre.<br>
 → L’ensemble du site devra être responsive sur mobile, tablette et desktop.<br>
 → Les pages devront passer la validation W3C en HTML et CSS sans erreur.<br>
 → Le site doit être parfaitement compatible avec les dernières versions desktop de
-Chrome et Firefox.<br>
+Chrome et Firefox.<br><br><br>
 
-<h2><u>Livrables attendus</u></h2><br>
+<h2><u>Livrables attendus</u></h2>
  <h3>Contenu des pages</h3><br>
  
-<h3>Page d’accueil (x1)</h3><br>
+<h3>Page d’accueil (x1):</h3>
 → Affichage de la localisation des restaurants. À terme il sera possible de choisir sa
 localisation pour trouver des restaurants proches d’un certain lieu.<br>
 → Une courte présentation de l’entreprise.<br>
 → Une section contenant les 4 menus sous forme cartes. Au clic sur la carte,
 l’utilisateur est redirigé vers la page du menu.<br>
 
-<h3>Pages de menu (x4)</h3><br>
+<h3>Pages de menu (x4):</h3>
 → 4 pages contenant chacune le menu d’un restaurant.
 Footer<br>
 → Le footer est identique sur toutes les pages.<br>
 → Au clic sur “Contact”, un renvoi vers une adresse mail est effectué.<br>
 
-<h3>Header</h3><br>
+<h3>Header:</h3>
 → Le header est présent sur toutes les pages.<br>
 → Sur la page d’accueil, il contient le logo du site.<br>
 → Sur les pages de menu, il contient en plus un bouton de retour vers la page d’accueil
@@ -98,7 +101,7 @@ les animations ou transitions CSS, pas de JavaScript ni de librairie.<br>
 
 <h2>Effets graphiques & animations</h2>
 
-<h3>Boutons</h3><br>
+<h3>Boutons:</h3>
 → Au survol, la couleur de fond des boutons principaux devra légèrement s’éclaircir.
 L’ombre portée devra également être plus visible.<br>
 → À terme, les visiteurs pourront sauvegarder leurs menus préférés. Pour ça, un
@@ -106,7 +109,7 @@ bouton "J’aime" en forme de cœur est présent sur la maquette. Au clic, il de
 remplir progressivement. Pour cette première version, l’effet peut être apparaître au
 survol sur desktop au lieu du clic.<br>
 
-<h3>Page d’accueil</h3><br>
+<h3>Page d’accueil:</h3>
 → Quand l’application aura plus de menus, un “loading spinner” sera nécessaire. Sur
 cette maquette, nous souhaitons en avoir un aperçu. Il devra apparaître pendant 1 à
 3 secondes quand on arrive sur la page d'accueil, couvrir l'intégralité de l'écran, et
@@ -114,7 +117,7 @@ utiliser les animations CSS (pas de librairie). Le design de ce loader n’est p
 toute proposition est donc la bienvenue tant qu’elle est cohérente avec la charte
 graphique du site.<br>
 
-<h3>Pages de menu</h3><br>
+<h3>Pages de menu:</h3>
 → À l’arrivée sur la page, les plats devront apparaître progressivement avec un léger
 décalage dans le temps. Ils pourront soit apparaître un par un, soit par groupe
 “Entrée”, “Plat” et “Dessert”. Un exemple de l’effet attendu est fourni.<br>
@@ -124,7 +127,7 @@ la droite vers la gauche. Pour cette première version, l’effet peut apparaît
 sur desktop au lieu du clic. Si l’intitulé du plat est trop long, il devra être rogné avec
 des points de suspension. Un exemple de l’effet attendu est fourni.<br>
 
-<h3>Organisation interne du projet</h3><br>
+<h2><u>Organisation interne du projet</u></h2>
 Chef de projet :<strong> Paul</strong><br>
 UX Designer :<strong> Fanny</strong><br>
 
