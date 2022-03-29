@@ -1,11 +1,10 @@
 @import "./Utils/variables";
 @import "./Utils/fonts";
-@import "./Pages/page-index";
-@import "./Pages/_pages-restaurant";
+@import "./Layout/base";
 @import "./Animations/heart-like";
 @import "./Animations/load-spinner";
+@import "./Layout/headers";
+@import "./Pages/page-index";
+@import "./Pages/_pages-restaurant";
 @import "./Layout/footer";
-@import "./Layout/header-index";
-@import "./Layout/header-restaurant";
-@import "./Layout/base";
 @import "./Layout/medias-queries";

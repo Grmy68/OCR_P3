@@ -1,0 +1,39 @@
+/* Header common */
+header {
+    text-align: center;
+    box-shadow: 0px 2px 8px $grey-rgba-50;
+    padding: 10px;
+    position: relative;
+    h1 {
+        font-family: $shrikhand;
+        font-weight: normal;}
+}
+
+/* Header index */
+.index_header {
+      z-index: 1;
+      i { display: none;}
+}
+
+/* Header restaurant */
+.header_restaurant {
+    display: flex;
+    justify-content: center;
+    box-shadow: 0px 2px 8px $grey-rgba-50;
+    z-index: 1; 
+    h1 {
+      animation: header-load 500ms 480ms both;
+    }
+    i {
+      position: absolute;
+      left: 20px;
+      top: 23px;
+      font-size: 22px;
+      animation: header-load 620ms 500ms both;
+    }
+}
+  
+@keyframes header-load {
+  0% {opacity: 0;}
+  100% {opacity: 1;}
+}

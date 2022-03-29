@@ -80,7 +80,10 @@
 }
 
 /* appear index page */
-.index_appear {animation: white-page 3.4s;}
+.body_index {
+  header, main, footer {
+  animation: white-page 3.4s;}
+}
   
 @keyframes white-page {
     0% {opacity: 0;}
