@@ -1,5 +1,5 @@
 /* Media Queries */
-        //////* mobil small *//////
+        //////* very small screen *//////
 /* function */
 @media screen and (max-width: 340px) {
 .function li i {left: 7%;}
@@ -50,7 +50,6 @@
 }
 
 /* restaurants list */   
-
 .restaurants_container {
     display: flex;
     flex-wrap: wrap;
@@ -122,14 +121,8 @@ body {
         }
 }
 
-
 /* Footer */
 footer a:hover {
     text-decoration: underline;}
 
 }
-    
-
-    
-
-    

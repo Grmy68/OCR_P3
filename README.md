@@ -1,6 +1,6 @@
 
 <h1>Dynamisez une page web avec des animations CSS</h1>
-<strong>Projet 3 de la formation Développeur Web - OpenClassrooms.</strong><br><br><br>
+<b>Projet 3 de la formation Développeur Web - OpenClassrooms ↓</b><br><br><br>
 
 
 <div style="text-align:center"><img src="img/logo/readme.png" alt="Présentation ohmyfood" width="800"/></div><br>
@@ -40,7 +40,7 @@ Texte: Roboto
 <h3>Couleurs:</h3><br>
 
 
-<img src="https://color-hex.org/colors/9356dc.png" alt="couleur #9356DC" width=20px height=20px>Primaire #9356DC<br><br>
+<img src="https://color-hex.org/colors/9356dc.png" alt="couleur #9356DC" width=20px height=20px>&nbsp;→&nbsp;Primaire #9356DC<br><br>
 
 
 <img src="https://www.colorhexa.com/ff79da.png" alt="couleur #FF79DA" width=20px height=20px>&nbsp;→&nbsp;Secondaire #FF79DA<br><br>
@@ -58,7 +58,7 @@ Nous souhaitons ouvrir nos services à la capitale française.<br>
 20 000 €
 
 
-<h3>Technologies:<h3>
+<h3>Technologies:</h3>
 → Le développement devra se faire en CSS, sans JavaScript.<br>
 → Aucun framework ne devra être utilisé, en revanche l’utilisation de SASS serait un
 plus.<br>
