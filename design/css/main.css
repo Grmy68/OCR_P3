@@ -462,8 +462,6 @@ footer {
   footer ul {
     list-style: none; }
     footer ul li {
-      display: flex;
-      position: relative;
       margin: 5px 0; }
     footer ul a {
       color: #ffffff; }
