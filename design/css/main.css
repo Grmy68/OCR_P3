@@ -262,7 +262,7 @@ header {
   padding: 25px 12px; }
   .restaurants_container .restaurant_card {
     position: relative;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
     border-radius: 25px;
     box-shadow: 0px 8px 20px rgba(131, 131, 131, 0.2);
     transition-duration: 0.5s; }
@@ -342,7 +342,7 @@ header {
     position: relative; }
     .menus_form .menu_container .dishes_restaurants {
       margin-bottom: 40px; }
-      .menus_form .menu_container .dishes_restaurants h2 {
+      .menus_form .menu_container .dishes_restaurants h3 {
         font-size: 18px;
         margin-bottom: 20px;
         text-transform: uppercase;
@@ -350,7 +350,7 @@ header {
         position: relative;
         margin-left: 15px;
         text-align: initial; }
-        .menus_form .menu_container .dishes_restaurants h2::after {
+        .menus_form .menu_container .dishes_restaurants h3::after {
           content: "";
           width: 40px;
           height: 4px;
@@ -452,7 +452,7 @@ footer {
   display: flex;
   flex-direction: column;
   padding: 20px 16px 25px 20px; }
-  footer h2 {
+  footer h3 {
     font-family: "Shrikhand", cursive;
     color: #ffffff;
     font-weight: normal;

@@ -68,9 +68,9 @@
   
 /* animation text with spinner */
 .text_scale {
-    animation: text-scale 1s 0.4s ease-out infinite;
     position: absolute;
     top: 23%;
+    animation: text-scale 1s 0.4s ease-out infinite;
 }
   
 @keyframes text-scale {
