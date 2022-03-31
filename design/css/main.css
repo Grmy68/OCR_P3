@@ -113,9 +113,9 @@ a {
     transform: rotate(360deg); } }
 /* animation text with spinner */
 .text_scale {
-  animation: text-scale 1s 0.4s ease-out infinite;
   position: absolute;
-  top: 23%; }
+  top: 23%;
+  animation: text-scale 1s 0.4s ease-out infinite; }
 
 @keyframes text-scale {
   0% {
@@ -182,7 +182,8 @@ header {
   align-items: center;
   text-align: center;
   background-color: #f6f6f6;
-  padding-bottom: 35px; }
+  padding-bottom: 35px;
+  margin-bottom: 35px; }
   .location .search_bar {
     display: flex;
     align-items: baseline;
